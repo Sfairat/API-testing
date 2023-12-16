@@ -1,0 +1,21 @@
+15:38:34 INFO ====== WebDriver manager ======
+15:38:35 INFO Get LATEST chromedriver version for google-chrome
+15:38:36 INFO Get LATEST chromedriver version for google-chrome
+15:38:37 INFO Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\120.0.6099.71\chromedriver-win32/chromedriver.exe] found in cache
+15:38:38 INFO Test1 starting
+15:38:38 INFO Send test of element //*[@id="login"]/div[1]/label/input
+15:38:38 INFO Send test of element //*[@id="login"]/div[2]/label/input
+15:38:38 INFO Click login button
+15:38:40 INFO We find text 401 in error field //*[@id="app"]/main/div/div/div[2]/h2
+15:38:40 INFO Test2 starting
+15:38:40 INFO Send GB2023070359823 of element //*[@id="login"]/div[1]/label/input
+15:38:40 INFO Send c25dc908c1 of element //*[@id="login"]/div[2]/label/input
+15:38:40 INFO Click login button
+15:38:42 INFO We find text Hello, GB2023070359823 in field //*[@id="app"]/main/nav/ul/li[3]/a
+15:38:42 INFO Test3 starting
+15:38:42 INFO Click Contact button
+15:38:42 INFO Send Alex of element /html/body/div/main/div/div/form/div[1]/label/input
+15:38:43 INFO Send example@mail.ru of element /html/body/div/main/div/div/form/div[2]/label/input
+15:38:43 INFO Send Test of element /html/body/div/main/div/div/form/div[3]/label/span/textarea
+15:38:43 INFO Click Contact Us button
+15:38:43 INFO We find text Form successfully submitted in alert massage
