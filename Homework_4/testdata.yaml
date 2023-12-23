@@ -1,0 +1,11 @@
+address: https://test-stand.gb.ru/login
+browser: chrome
+sleep_time: 5
+login: 'GB2023070359823'
+password: 'c25dc908c1'
+path: 'https://test-stand.gb.ru/gateway/login'
+post_path: 'https://test-stand.gb.ru/api/posts'
+username: 'lldfgdh'
+pass: '1743ab0424'
+path_yandex: 'https://speller.yandex.net/services/spellservice?WSDL'
+yandex_text: 'калбаса'

@@ -1,0 +1,387 @@
+18:56:13 INFO ====== WebDriver manager ======
+18:56:14 INFO Get LATEST chromedriver version for google-chrome
+18:56:14 DEBUG Starting new HTTPS connection (1): googlechromelabs.github.io:443
+18:56:14 DEBUG https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 3381
+18:56:14 INFO Get LATEST chromedriver version for google-chrome
+18:56:14 DEBUG Starting new HTTPS connection (1): googlechromelabs.github.io:443
+18:56:14 DEBUG https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 3381
+18:56:14 INFO Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\120.0.6099.109\chromedriver-win32/chromedriver.exe] found in cache
+18:56:14 DEBUG Started executable: `C:\Users\user\.wdm\drivers\chromedriver\win64\120.0.6099.109\chromedriver-win32/chromedriver.exe` in a child process with pid: 21384 using 0 to output -3
+18:56:15 DEBUG POST http://localhost:54699/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+18:56:15 DEBUG Starting new HTTP connection (1): localhost:54699
+18:56:15 DEBUG http://localhost:54699 "POST /session HTTP/1.1" 200 0
+18:56:15 DEBUG Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"120.0.6099.111","chrome":{"chromedriverVersion":"120.0.6099.109 (3419140ab665596f21b385ce136419fde0924272-refs/branch-heads/6099@{#1483})","userDataDir":"C:\\Users\\user\\AppData\\Local\\Temp\\scoped_dir21384_1822470448"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:54702"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"707a71f9f026feaa9b574f6bc021e7e4"}} | headers=HTTPHeaderDict({'Content-Length': '883', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:15 DEBUG Finished Request
+18:56:15 INFO Test1 starting
+18:56:15 INFO Log in to the site
+18:56:15 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/url {"url": "https://test-stand.gb.ru/login"}
+18:56:16 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/url HTTP/1.1" 200 0
+18:56:16 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:16 DEBUG Finished Request
+18:56:16 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"login\"]/div[1]/label/input"}
+18:56:16 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 200 0
+18:56:16 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"D99DB07FDF9F9196958520C18A1EE45C_element_2"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:16 DEBUG Finished Request
+18:56:16 DEBUG Send test of element login
+18:56:16 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/D99DB07FDF9F9196958520C18A1EE45C_element_2/clear {}
+18:56:16 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/D99DB07FDF9F9196958520C18A1EE45C_element_2/clear HTTP/1.1" 200 0
+18:56:16 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:16 DEBUG Finished Request
+18:56:16 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/D99DB07FDF9F9196958520C18A1EE45C_element_2/value {"text": "test", "value": ["t", "e", "s", "t"]}
+18:56:16 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/D99DB07FDF9F9196958520C18A1EE45C_element_2/value HTTP/1.1" 200 0
+18:56:16 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:16 DEBUG Finished Request
+18:56:16 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"login\"]/div[2]/label/input"}
+18:56:16 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 200 0
+18:56:16 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"D99DB07FDF9F9196958520C18A1EE45C_element_3"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:16 DEBUG Finished Request
+18:56:16 DEBUG Send test of element pass
+18:56:16 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/D99DB07FDF9F9196958520C18A1EE45C_element_3/clear {}
+18:56:16 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/D99DB07FDF9F9196958520C18A1EE45C_element_3/clear HTTP/1.1" 200 0
+18:56:16 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:16 DEBUG Finished Request
+18:56:16 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/D99DB07FDF9F9196958520C18A1EE45C_element_3/value {"text": "test", "value": ["t", "e", "s", "t"]}
+18:56:16 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/D99DB07FDF9F9196958520C18A1EE45C_element_3/value HTTP/1.1" 200 0
+18:56:16 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:16 DEBUG Finished Request
+18:56:16 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "css selector", "value": "button"}
+18:56:16 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 200 0
+18:56:16 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"D99DB07FDF9F9196958520C18A1EE45C_element_8"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:16 DEBUG Finished Request
+18:56:16 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/D99DB07FDF9F9196958520C18A1EE45C_element_8/click {}
+18:56:16 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/D99DB07FDF9F9196958520C18A1EE45C_element_8/click HTTP/1.1" 200 0
+18:56:16 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:16 DEBUG Finished Request
+18:56:16 DEBUG Click login button
+18:56:16 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"app\"]/main/div/div/div[2]/h2"}
+18:56:16 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 404 0
+18:56:16 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/main/div/div/div[2]/h2\"}\n  (Session info: chrome=120.0.6099.111)","stacktrace":"\tGetHandleVerifier [0x00686EE3+174339]\n\t(No symbol) [0x005B0A51]\n\t(No symbol) [0x002C6FF6]\n\t(No symbol) [0x002F9876]\n\t(No symbol) [0x002F9C2C]\n\t(No symbol) [0x0032BD42]\n\t(No symbol) [0x00317054]\n\t(No symbol) [0x0032A104]\n\t(No symbol) [0x00316DA6]\n\t(No symbol) [0x002F1034]\n\t(No symbol) [0x002F1F8D]\n\tGetHandleVerifier [0x00724B1C+820540]\n\tsqlite3_dbdata_init [0x007E53EE+653550]\n\tsqlite3_dbdata_init [0x007E4E09+652041]\n\tsqlite3_dbdata_init [0x007D97CC+605388]\n\tsqlite3_dbdata_init [0x007E5D9B+656027]\n\t(No symbol) [0x005BFE6C]\n\t(No symbol) [0x005B83B8]\n\t(No symbol) [0x005B84DD]\n\t(No symbol) [0x005A5818]\n\tBaseThreadInitThunk [0x76216839+25]\n\tRtlGetFullPathName_UEx [0x778F906F+1215]\n\tRtlGetFullPathName_UEx [0x778F903D+1165]\n"}} | headers=HTTPHeaderDict({'Content-Length': '1002', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:16 DEBUG Finished Request
+18:56:17 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"app\"]/main/div/div/div[2]/h2"}
+18:56:17 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 404 0
+18:56:17 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/main/div/div/div[2]/h2\"}\n  (Session info: chrome=120.0.6099.111)","stacktrace":"\tGetHandleVerifier [0x00686EE3+174339]\n\t(No symbol) [0x005B0A51]\n\t(No symbol) [0x002C6FF6]\n\t(No symbol) [0x002F9876]\n\t(No symbol) [0x002F9C2C]\n\t(No symbol) [0x0032BD42]\n\t(No symbol) [0x00317054]\n\t(No symbol) [0x0032A104]\n\t(No symbol) [0x00316DA6]\n\t(No symbol) [0x002F1034]\n\t(No symbol) [0x002F1F8D]\n\tGetHandleVerifier [0x00724B1C+820540]\n\tsqlite3_dbdata_init [0x007E53EE+653550]\n\tsqlite3_dbdata_init [0x007E4E09+652041]\n\tsqlite3_dbdata_init [0x007D97CC+605388]\n\tsqlite3_dbdata_init [0x007E5D9B+656027]\n\t(No symbol) [0x005BFE6C]\n\t(No symbol) [0x005B83B8]\n\t(No symbol) [0x005B84DD]\n\t(No symbol) [0x005A5818]\n\tBaseThreadInitThunk [0x76216839+25]\n\tRtlGetFullPathName_UEx [0x778F906F+1215]\n\tRtlGetFullPathName_UEx [0x778F903D+1165]\n"}} | headers=HTTPHeaderDict({'Content-Length': '1002', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:17 DEBUG Finished Request
+18:56:17 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"app\"]/main/div/div/div[2]/h2"}
+18:56:17 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 200 0
+18:56:17 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"D99DB07FDF9F9196958520C18A1EE45C_element_12"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:17 DEBUG Finished Request
+18:56:17 DEBUG GET http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/D99DB07FDF9F9196958520C18A1EE45C_element_12/text {}
+18:56:17 DEBUG http://localhost:54699 "GET /session/707a71f9f026feaa9b574f6bc021e7e4/element/D99DB07FDF9F9196958520C18A1EE45C_element_12/text HTTP/1.1" 200 0
+18:56:17 DEBUG Remote response: status=200 | data={"value":"401"} | headers=HTTPHeaderDict({'Content-Length': '15', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:17 DEBUG Finished Request
+18:56:17 DEBUG We find text 401 in field <selenium.webdriver.remote.webelement.WebElement (session="707a71f9f026feaa9b574f6bc021e7e4", element="D99DB07FDF9F9196958520C18A1EE45C_element_12")>
+18:56:17 INFO Test2 starting
+18:56:17 INFO Log in to the site
+18:56:17 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/url {"url": "https://test-stand.gb.ru/login"}
+18:56:17 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/url HTTP/1.1" 200 0
+18:56:17 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:17 DEBUG Finished Request
+18:56:17 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"login\"]/div[1]/label/input"}
+18:56:17 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 200 0
+18:56:17 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"E637BF7CBBD1CDEA63E1B5FEB2020AE6_element_14"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:17 DEBUG Finished Request
+18:56:17 DEBUG Send GB2023070359823 of element login
+18:56:17 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/E637BF7CBBD1CDEA63E1B5FEB2020AE6_element_14/clear {}
+18:56:17 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/E637BF7CBBD1CDEA63E1B5FEB2020AE6_element_14/clear HTTP/1.1" 200 0
+18:56:17 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:17 DEBUG Finished Request
+18:56:17 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/E637BF7CBBD1CDEA63E1B5FEB2020AE6_element_14/value {"text": "GB2023070359823", "value": ["G", "B", "2", "0", "2", "3", "0", "7", "0", "3", "5", "9", "8", "2", "3"]}
+18:56:17 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/E637BF7CBBD1CDEA63E1B5FEB2020AE6_element_14/value HTTP/1.1" 200 0
+18:56:17 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:17 DEBUG Finished Request
+18:56:17 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"login\"]/div[2]/label/input"}
+18:56:17 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 200 0
+18:56:17 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"E637BF7CBBD1CDEA63E1B5FEB2020AE6_element_15"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:17 DEBUG Finished Request
+18:56:17 DEBUG Send c25dc908c1 of element pass
+18:56:17 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/E637BF7CBBD1CDEA63E1B5FEB2020AE6_element_15/clear {}
+18:56:17 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/E637BF7CBBD1CDEA63E1B5FEB2020AE6_element_15/clear HTTP/1.1" 200 0
+18:56:17 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:17 DEBUG Finished Request
+18:56:17 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/E637BF7CBBD1CDEA63E1B5FEB2020AE6_element_15/value {"text": "c25dc908c1", "value": ["c", "2", "5", "d", "c", "9", "0", "8", "c", "1"]}
+18:56:17 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/E637BF7CBBD1CDEA63E1B5FEB2020AE6_element_15/value HTTP/1.1" 200 0
+18:56:17 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:17 DEBUG Finished Request
+18:56:17 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "css selector", "value": "button"}
+18:56:17 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 200 0
+18:56:17 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"E637BF7CBBD1CDEA63E1B5FEB2020AE6_element_20"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:17 DEBUG Finished Request
+18:56:17 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/E637BF7CBBD1CDEA63E1B5FEB2020AE6_element_20/click {}
+18:56:17 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/E637BF7CBBD1CDEA63E1B5FEB2020AE6_element_20/click HTTP/1.1" 200 0
+18:56:17 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:17 DEBUG Finished Request
+18:56:17 DEBUG Click login button
+18:56:17 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"app\"]/main/nav/ul/li[3]/a"}
+18:56:17 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 404 0
+18:56:17 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/main/nav/ul/li[3]/a\"}\n  (Session info: chrome=120.0.6099.111)","stacktrace":"\tGetHandleVerifier [0x00686EE3+174339]\n\t(No symbol) [0x005B0A51]\n\t(No symbol) [0x002C6FF6]\n\t(No symbol) [0x002F9876]\n\t(No symbol) [0x002F9C2C]\n\t(No symbol) [0x0032BD42]\n\t(No symbol) [0x00317054]\n\t(No symbol) [0x0032A104]\n\t(No symbol) [0x00316DA6]\n\t(No symbol) [0x002F1034]\n\t(No symbol) [0x002F1F8D]\n\tGetHandleVerifier [0x00724B1C+820540]\n\tsqlite3_dbdata_init [0x007E53EE+653550]\n\tsqlite3_dbdata_init [0x007E4E09+652041]\n\tsqlite3_dbdata_init [0x007D97CC+605388]\n\tsqlite3_dbdata_init [0x007E5D9B+656027]\n\t(No symbol) [0x005BFE6C]\n\t(No symbol) [0x005B83B8]\n\t(No symbol) [0x005B84DD]\n\t(No symbol) [0x005A5818]\n\tBaseThreadInitThunk [0x76216839+25]\n\tRtlGetFullPathName_UEx [0x778F906F+1215]\n\tRtlGetFullPathName_UEx [0x778F903D+1165]\n"}} | headers=HTTPHeaderDict({'Content-Length': '999', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:17 DEBUG Finished Request
+18:56:18 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"app\"]/main/nav/ul/li[3]/a"}
+18:56:18 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 404 0
+18:56:18 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/main/nav/ul/li[3]/a\"}\n  (Session info: chrome=120.0.6099.111)","stacktrace":"\tGetHandleVerifier [0x00686EE3+174339]\n\t(No symbol) [0x005B0A51]\n\t(No symbol) [0x002C6FF6]\n\t(No symbol) [0x002F9876]\n\t(No symbol) [0x002F9C2C]\n\t(No symbol) [0x0032BD42]\n\t(No symbol) [0x00317054]\n\t(No symbol) [0x0032A104]\n\t(No symbol) [0x00316DA6]\n\t(No symbol) [0x002F1034]\n\t(No symbol) [0x002F1F8D]\n\tGetHandleVerifier [0x00724B1C+820540]\n\tsqlite3_dbdata_init [0x007E53EE+653550]\n\tsqlite3_dbdata_init [0x007E4E09+652041]\n\tsqlite3_dbdata_init [0x007D97CC+605388]\n\tsqlite3_dbdata_init [0x007E5D9B+656027]\n\t(No symbol) [0x005BFE6C]\n\t(No symbol) [0x005B83B8]\n\t(No symbol) [0x005B84DD]\n\t(No symbol) [0x005A5818]\n\tBaseThreadInitThunk [0x76216839+25]\n\tRtlGetFullPathName_UEx [0x778F906F+1215]\n\tRtlGetFullPathName_UEx [0x778F903D+1165]\n"}} | headers=HTTPHeaderDict({'Content-Length': '999', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:18 DEBUG Finished Request
+18:56:18 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"app\"]/main/nav/ul/li[3]/a"}
+18:56:19 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 200 0
+18:56:19 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"CE3D7CE644C5E2A97AA9E0B5FBBAFE98_element_28"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:19 DEBUG Finished Request
+18:56:19 DEBUG GET http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/CE3D7CE644C5E2A97AA9E0B5FBBAFE98_element_28/text {}
+18:56:19 DEBUG http://localhost:54699 "GET /session/707a71f9f026feaa9b574f6bc021e7e4/element/CE3D7CE644C5E2A97AA9E0B5FBBAFE98_element_28/text HTTP/1.1" 200 0
+18:56:19 DEBUG Remote response: status=200 | data={"value":"Hello, GB2023070359823"} | headers=HTTPHeaderDict({'Content-Length': '34', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:19 DEBUG Finished Request
+18:56:19 DEBUG We find text Hello, GB2023070359823 in field <selenium.webdriver.remote.webelement.WebElement (session="707a71f9f026feaa9b574f6bc021e7e4", element="CE3D7CE644C5E2A97AA9E0B5FBBAFE98_element_28")>
+18:56:19 DEBUG Starting new HTTPS connection (1): test-stand.gb.ru:443
+18:56:19 DEBUG https://test-stand.gb.ru:443 "POST /gateway/login HTTP/1.1" 200 235
+18:56:19 DEBUG Starting new HTTPS connection (1): test-stand.gb.ru:443
+18:56:20 DEBUG https://test-stand.gb.ru:443 "GET /api/posts HTTP/1.1" 200 1713
+18:56:20 INFO Test3 starting
+18:56:20 INFO Log in to the site
+18:56:20 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/url {"url": "https://test-stand.gb.ru/login"}
+18:56:20 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/url HTTP/1.1" 200 0
+18:56:20 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:20 DEBUG Finished Request
+18:56:20 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"login\"]/div[1]/label/input"}
+18:56:20 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 200 0
+18:56:20 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"1856C9DD80EB6269951455341C9F2F2E_element_44"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:20 DEBUG Finished Request
+18:56:20 DEBUG Send lldfgdh of element login
+18:56:20 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/1856C9DD80EB6269951455341C9F2F2E_element_44/clear {}
+18:56:20 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/1856C9DD80EB6269951455341C9F2F2E_element_44/clear HTTP/1.1" 200 0
+18:56:20 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:20 DEBUG Finished Request
+18:56:20 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/1856C9DD80EB6269951455341C9F2F2E_element_44/value {"text": "lldfgdh", "value": ["l", "l", "d", "f", "g", "d", "h"]}
+18:56:20 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/1856C9DD80EB6269951455341C9F2F2E_element_44/value HTTP/1.1" 200 0
+18:56:20 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:20 DEBUG Finished Request
+18:56:20 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"login\"]/div[2]/label/input"}
+18:56:20 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 200 0
+18:56:20 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"1856C9DD80EB6269951455341C9F2F2E_element_45"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:20 DEBUG Finished Request
+18:56:20 DEBUG Send 1743ab0424 of element pass
+18:56:20 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/1856C9DD80EB6269951455341C9F2F2E_element_45/clear {}
+18:56:20 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/1856C9DD80EB6269951455341C9F2F2E_element_45/clear HTTP/1.1" 200 0
+18:56:20 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:20 DEBUG Finished Request
+18:56:20 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/1856C9DD80EB6269951455341C9F2F2E_element_45/value {"text": "1743ab0424", "value": ["1", "7", "4", "3", "a", "b", "0", "4", "2", "4"]}
+18:56:20 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/1856C9DD80EB6269951455341C9F2F2E_element_45/value HTTP/1.1" 200 0
+18:56:20 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:20 DEBUG Finished Request
+18:56:20 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "css selector", "value": "button"}
+18:56:20 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 200 0
+18:56:20 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"1856C9DD80EB6269951455341C9F2F2E_element_51"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:20 DEBUG Finished Request
+18:56:20 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/1856C9DD80EB6269951455341C9F2F2E_element_51/click {}
+18:56:20 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/1856C9DD80EB6269951455341C9F2F2E_element_51/click HTTP/1.1" 200 0
+18:56:20 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:20 DEBUG Finished Request
+18:56:20 DEBUG Click login button
+18:56:20 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"app\"]/main/div/div[3]/div[1]/a[1]/h2"}
+18:56:20 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 404 0
+18:56:20 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/main/div/div[3]/div[1]/a[1]/h2\"}\n  (Session info: chrome=120.0.6099.111)","stacktrace":"\tGetHandleVerifier [0x00686EE3+174339]\n\t(No symbol) [0x005B0A51]\n\t(No symbol) [0x002C6FF6]\n\t(No symbol) [0x002F9876]\n\t(No symbol) [0x002F9C2C]\n\t(No symbol) [0x0032BD42]\n\t(No symbol) [0x00317054]\n\t(No symbol) [0x0032A104]\n\t(No symbol) [0x00316DA6]\n\t(No symbol) [0x002F1034]\n\t(No symbol) [0x002F1F8D]\n\tGetHandleVerifier [0x00724B1C+820540]\n\tsqlite3_dbdata_init [0x007E53EE+653550]\n\tsqlite3_dbdata_init [0x007E4E09+652041]\n\tsqlite3_dbdata_init [0x007D97CC+605388]\n\tsqlite3_dbdata_init [0x007E5D9B+656027]\n\t(No symbol) [0x005BFE6C]\n\t(No symbol) [0x005B83B8]\n\t(No symbol) [0x005B84DD]\n\t(No symbol) [0x005A5818]\n\tBaseThreadInitThunk [0x76216839+25]\n\tRtlGetFullPathName_UEx [0x778F906F+1215]\n\tRtlGetFullPathName_UEx [0x778F903D+1165]\n"}} | headers=HTTPHeaderDict({'Content-Length': '1010', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:20 DEBUG Finished Request
+18:56:21 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"app\"]/main/div/div[3]/div[1]/a[1]/h2"}
+18:56:21 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 404 0
+18:56:21 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/main/div/div[3]/div[1]/a[1]/h2\"}\n  (Session info: chrome=120.0.6099.111)","stacktrace":"\tGetHandleVerifier [0x00686EE3+174339]\n\t(No symbol) [0x005B0A51]\n\t(No symbol) [0x002C6FF6]\n\t(No symbol) [0x002F9876]\n\t(No symbol) [0x002F9C2C]\n\t(No symbol) [0x0032BD42]\n\t(No symbol) [0x00317054]\n\t(No symbol) [0x0032A104]\n\t(No symbol) [0x00316DA6]\n\t(No symbol) [0x002F1034]\n\t(No symbol) [0x002F1F8D]\n\tGetHandleVerifier [0x00724B1C+820540]\n\tsqlite3_dbdata_init [0x007E53EE+653550]\n\tsqlite3_dbdata_init [0x007E4E09+652041]\n\tsqlite3_dbdata_init [0x007D97CC+605388]\n\tsqlite3_dbdata_init [0x007E5D9B+656027]\n\t(No symbol) [0x005BFE6C]\n\t(No symbol) [0x005B83B8]\n\t(No symbol) [0x005B84DD]\n\t(No symbol) [0x005A5818]\n\tBaseThreadInitThunk [0x76216839+25]\n\tRtlGetFullPathName_UEx [0x778F906F+1215]\n\tRtlGetFullPathName_UEx [0x778F903D+1165]\n"}} | headers=HTTPHeaderDict({'Content-Length': '1010', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:21 DEBUG Finished Request
+18:56:21 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"app\"]/main/div/div[3]/div[1]/a[1]/h2"}
+18:56:22 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 200 0
+18:56:22 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"37878B97F7BA6BABBC792E740177D3DF_element_64"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:22 DEBUG Finished Request
+18:56:22 DEBUG GET http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/37878B97F7BA6BABBC792E740177D3DF_element_64/text {}
+18:56:22 DEBUG http://localhost:54699 "GET /session/707a71f9f026feaa9b574f6bc021e7e4/element/37878B97F7BA6BABBC792E740177D3DF_element_64/text HTTP/1.1" 200 0
+18:56:22 DEBUG Remote response: status=200 | data={"value":"My new test post"} | headers=HTTPHeaderDict({'Content-Length': '28', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:22 DEBUG Finished Request
+18:56:22 DEBUG We find text My new test post in field <selenium.webdriver.remote.webelement.WebElement (session="707a71f9f026feaa9b574f6bc021e7e4", element="37878B97F7BA6BABBC792E740177D3DF_element_64")>
+18:56:22 INFO Test4 starting
+18:56:22 INFO Log in to the site
+18:56:22 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/url {"url": "https://test-stand.gb.ru/login"}
+18:56:22 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/url HTTP/1.1" 200 0
+18:56:22 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:22 DEBUG Finished Request
+18:56:22 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"login\"]/div[1]/label/input"}
+18:56:22 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 200 0
+18:56:22 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"4E264266587FA841BB997FFDC265F708_element_85"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:22 DEBUG Finished Request
+18:56:22 DEBUG Send lldfgdh of element login
+18:56:22 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/4E264266587FA841BB997FFDC265F708_element_85/clear {}
+18:56:22 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/4E264266587FA841BB997FFDC265F708_element_85/clear HTTP/1.1" 200 0
+18:56:22 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:22 DEBUG Finished Request
+18:56:22 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/4E264266587FA841BB997FFDC265F708_element_85/value {"text": "lldfgdh", "value": ["l", "l", "d", "f", "g", "d", "h"]}
+18:56:22 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/4E264266587FA841BB997FFDC265F708_element_85/value HTTP/1.1" 200 0
+18:56:22 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:22 DEBUG Finished Request
+18:56:22 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"login\"]/div[2]/label/input"}
+18:56:22 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 200 0
+18:56:22 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"4E264266587FA841BB997FFDC265F708_element_86"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:22 DEBUG Finished Request
+18:56:22 DEBUG Send 1743ab0424 of element pass
+18:56:22 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/4E264266587FA841BB997FFDC265F708_element_86/clear {}
+18:56:22 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/4E264266587FA841BB997FFDC265F708_element_86/clear HTTP/1.1" 200 0
+18:56:22 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:22 DEBUG Finished Request
+18:56:22 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/4E264266587FA841BB997FFDC265F708_element_86/value {"text": "1743ab0424", "value": ["1", "7", "4", "3", "a", "b", "0", "4", "2", "4"]}
+18:56:22 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/4E264266587FA841BB997FFDC265F708_element_86/value HTTP/1.1" 200 0
+18:56:22 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:22 DEBUG Finished Request
+18:56:22 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "css selector", "value": "button"}
+18:56:22 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 200 0
+18:56:22 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"4E264266587FA841BB997FFDC265F708_element_93"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:22 DEBUG Finished Request
+18:56:22 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/4E264266587FA841BB997FFDC265F708_element_93/click {}
+18:56:22 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/4E264266587FA841BB997FFDC265F708_element_93/click HTTP/1.1" 200 0
+18:56:22 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:22 DEBUG Finished Request
+18:56:22 DEBUG Click login button
+18:56:22 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"create-btn\"]"}
+18:56:22 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 404 0
+18:56:22 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"create-btn\"]\"}\n  (Session info: chrome=120.0.6099.111)","stacktrace":"\tGetHandleVerifier [0x00686EE3+174339]\n\t(No symbol) [0x005B0A51]\n\t(No symbol) [0x002C6FF6]\n\t(No symbol) [0x002F9876]\n\t(No symbol) [0x002F9C2C]\n\t(No symbol) [0x0032BD42]\n\t(No symbol) [0x00317054]\n\t(No symbol) [0x0032A104]\n\t(No symbol) [0x00316DA6]\n\t(No symbol) [0x002F1034]\n\t(No symbol) [0x002F1F8D]\n\tGetHandleVerifier [0x00724B1C+820540]\n\tsqlite3_dbdata_init [0x007E53EE+653550]\n\tsqlite3_dbdata_init [0x007E4E09+652041]\n\tsqlite3_dbdata_init [0x007D97CC+605388]\n\tsqlite3_dbdata_init [0x007E5D9B+656027]\n\t(No symbol) [0x005BFE6C]\n\t(No symbol) [0x005B83B8]\n\t(No symbol) [0x005B84DD]\n\t(No symbol) [0x005A5818]\n\tBaseThreadInitThunk [0x76216839+25]\n\tRtlGetFullPathName_UEx [0x778F906F+1215]\n\tRtlGetFullPathName_UEx [0x778F903D+1165]\n"}} | headers=HTTPHeaderDict({'Content-Length': '986', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:22 DEBUG Finished Request
+18:56:23 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"create-btn\"]"}
+18:56:23 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 404 0
+18:56:23 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"create-btn\"]\"}\n  (Session info: chrome=120.0.6099.111)","stacktrace":"\tGetHandleVerifier [0x00686EE3+174339]\n\t(No symbol) [0x005B0A51]\n\t(No symbol) [0x002C6FF6]\n\t(No symbol) [0x002F9876]\n\t(No symbol) [0x002F9C2C]\n\t(No symbol) [0x0032BD42]\n\t(No symbol) [0x00317054]\n\t(No symbol) [0x0032A104]\n\t(No symbol) [0x00316DA6]\n\t(No symbol) [0x002F1034]\n\t(No symbol) [0x002F1F8D]\n\tGetHandleVerifier [0x00724B1C+820540]\n\tsqlite3_dbdata_init [0x007E53EE+653550]\n\tsqlite3_dbdata_init [0x007E4E09+652041]\n\tsqlite3_dbdata_init [0x007D97CC+605388]\n\tsqlite3_dbdata_init [0x007E5D9B+656027]\n\t(No symbol) [0x005BFE6C]\n\t(No symbol) [0x005B83B8]\n\t(No symbol) [0x005B84DD]\n\t(No symbol) [0x005A5818]\n\tBaseThreadInitThunk [0x76216839+25]\n\tRtlGetFullPathName_UEx [0x778F906F+1215]\n\tRtlGetFullPathName_UEx [0x778F903D+1165]\n"}} | headers=HTTPHeaderDict({'Content-Length': '986', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:23 DEBUG Finished Request
+18:56:23 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"create-btn\"]"}
+18:56:24 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 200 0
+18:56:24 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"0FEE17317129FB39C879C4B99D81B840_element_104"}} | headers=HTTPHeaderDict({'Content-Length': '96', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:24 DEBUG Finished Request
+18:56:24 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/0FEE17317129FB39C879C4B99D81B840_element_104/click {}
+18:56:24 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/0FEE17317129FB39C879C4B99D81B840_element_104/click HTTP/1.1" 200 0
+18:56:24 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:24 DEBUG Finished Request
+18:56:24 DEBUG Click create new post button
+18:56:24 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"create-item\"]/div/div/div[1]/div/label/input"}
+18:56:24 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 200 0
+18:56:24 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"07EB6248F90B1D1B0EE25EE8F9EB0DA7_element_107"}} | headers=HTTPHeaderDict({'Content-Length': '96', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:24 DEBUG Finished Request
+18:56:24 DEBUG Send Another test post of element test post title
+18:56:24 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/07EB6248F90B1D1B0EE25EE8F9EB0DA7_element_107/clear {}
+18:56:24 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/07EB6248F90B1D1B0EE25EE8F9EB0DA7_element_107/clear HTTP/1.1" 200 0
+18:56:24 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:24 DEBUG Finished Request
+18:56:24 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/07EB6248F90B1D1B0EE25EE8F9EB0DA7_element_107/value {"text": "Another test post", "value": ["A", "n", "o", "t", "h", "e", "r", " ", "t", "e", "s", "t", " ", "p", "o", "s", "t"]}
+18:56:24 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/07EB6248F90B1D1B0EE25EE8F9EB0DA7_element_107/value HTTP/1.1" 200 0
+18:56:24 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:24 DEBUG Finished Request
+18:56:24 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"create-item\"]/div/div/div[2]/div/label/span/textarea"}
+18:56:24 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 200 0
+18:56:24 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"07EB6248F90B1D1B0EE25EE8F9EB0DA7_element_108"}} | headers=HTTPHeaderDict({'Content-Length': '96', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:24 DEBUG Finished Request
+18:56:24 DEBUG Send Test post description of element test post description
+18:56:24 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/07EB6248F90B1D1B0EE25EE8F9EB0DA7_element_108/clear {}
+18:56:24 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/07EB6248F90B1D1B0EE25EE8F9EB0DA7_element_108/clear HTTP/1.1" 200 0
+18:56:24 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:24 DEBUG Finished Request
+18:56:24 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/07EB6248F90B1D1B0EE25EE8F9EB0DA7_element_108/value {"text": "Test post description", "value": ["T", "e", "s", "t", " ", "p", "o", "s", "t", " ", "d", "e", "s", "c", "r", "i", "p", "t", "i", "o", "n"]}
+18:56:24 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/07EB6248F90B1D1B0EE25EE8F9EB0DA7_element_108/value HTTP/1.1" 200 0
+18:56:24 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:24 DEBUG Finished Request
+18:56:24 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "/html/body/div/main/div/div/form/div/div/div[3]/div/label/span/textarea"}
+18:56:24 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 200 0
+18:56:24 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"07EB6248F90B1D1B0EE25EE8F9EB0DA7_element_109"}} | headers=HTTPHeaderDict({'Content-Length': '96', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:24 DEBUG Finished Request
+18:56:24 DEBUG Send ^=_=^ of element test post content
+18:56:24 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/07EB6248F90B1D1B0EE25EE8F9EB0DA7_element_109/clear {}
+18:56:24 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/07EB6248F90B1D1B0EE25EE8F9EB0DA7_element_109/clear HTTP/1.1" 200 0
+18:56:24 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:24 DEBUG Finished Request
+18:56:24 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/07EB6248F90B1D1B0EE25EE8F9EB0DA7_element_109/value {"text": "^=_=^", "value": ["^", "=", "_", "=", "^"]}
+18:56:24 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/07EB6248F90B1D1B0EE25EE8F9EB0DA7_element_109/value HTTP/1.1" 200 0
+18:56:24 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:24 DEBUG Finished Request
+18:56:24 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element {"using": "xpath", "value": "//*[@id=\"create-item\"]/div/div/div[7]/div/button/span"}
+18:56:24 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element HTTP/1.1" 200 0
+18:56:24 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"07EB6248F90B1D1B0EE25EE8F9EB0DA7_element_121"}} | headers=HTTPHeaderDict({'Content-Length': '96', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:24 DEBUG Finished Request
+18:56:24 DEBUG POST http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4/element/07EB6248F90B1D1B0EE25EE8F9EB0DA7_element_121/click {}
+18:56:24 DEBUG http://localhost:54699 "POST /session/707a71f9f026feaa9b574f6bc021e7e4/element/07EB6248F90B1D1B0EE25EE8F9EB0DA7_element_121/click HTTP/1.1" 200 0
+18:56:24 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:24 DEBUG Finished Request
+18:56:24 DEBUG Click save new test post button
+18:56:24 DEBUG Starting new HTTPS connection (1): test-stand.gb.ru:443
+18:56:25 DEBUG https://test-stand.gb.ru:443 "POST /gateway/login HTTP/1.1" 200 235
+18:56:25 DEBUG Starting new HTTPS connection (1): test-stand.gb.ru:443
+18:56:25 DEBUG https://test-stand.gb.ru:443 "GET /api/posts HTTP/1.1" 200 1426
+18:56:25 DEBUG Init schema document for None
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}string', <zeep.xsd.types.builtins.String object at 0x0000026DC447B550>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}boolean', <zeep.xsd.types.builtins.Boolean object at 0x0000026DC6F79C90>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}decimal', <zeep.xsd.types.builtins.Decimal object at 0x0000026DC6F7B250>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}float', <zeep.xsd.types.builtins.Float object at 0x0000026DC6F79BD0>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}double', <zeep.xsd.types.builtins.Double object at 0x0000026DC6F7A810>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}duration', <zeep.xsd.types.builtins.Duration object at 0x0000026DC6F7AE50>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}dateTime', <zeep.xsd.types.builtins.DateTime object at 0x0000026DC6F78650>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}time', <zeep.xsd.types.builtins.Time object at 0x0000026DC6F79B50>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}date', <zeep.xsd.types.builtins.Date object at 0x0000026DC6F79690>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}gYearMonth', <zeep.xsd.types.builtins.gYearMonth object at 0x0000026DC6F7A350>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}gYear', <zeep.xsd.types.builtins.gYear object at 0x0000026DC6F7BC50>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}gMonthDay', <zeep.xsd.types.builtins.gMonthDay object at 0x0000026DC32DE650>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}gDay', <zeep.xsd.types.builtins.gDay object at 0x0000026DC6F8B4D0>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}gMonth', <zeep.xsd.types.builtins.gMonth object at 0x0000026DC6F88B10>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}hexBinary', <zeep.xsd.types.builtins.HexBinary object at 0x0000026DC6F88990>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}base64Binary', <zeep.xsd.types.builtins.Base64Binary object at 0x0000026DC6F8B810>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}anyURI', <zeep.xsd.types.builtins.AnyURI object at 0x0000026DC6F894D0>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}QName', <zeep.xsd.types.builtins.QName object at 0x0000026DC6F8B990>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}NOTATION', <zeep.xsd.types.builtins.Notation object at 0x0000026DC6F88D90>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}normalizedString', <zeep.xsd.types.builtins.NormalizedString object at 0x0000026DC6F89910>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}token', <zeep.xsd.types.builtins.Token object at 0x0000026DC6F8B5D0>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}language', <zeep.xsd.types.builtins.Language object at 0x0000026DC6F8AE10>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}NMTOKEN', <zeep.xsd.types.builtins.NmToken object at 0x0000026DC6F8A390>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}NMTOKENS', <zeep.xsd.types.builtins.NmTokens object at 0x0000026DC6F89150>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}Name', <zeep.xsd.types.builtins.Name object at 0x0000026DC6F89650>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}NCName', <zeep.xsd.types.builtins.NCName object at 0x0000026DC6F8AF90>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}ID', <zeep.xsd.types.builtins.ID object at 0x0000026DC6F89C50>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}IDREF', <zeep.xsd.types.builtins.IDREF object at 0x0000026DC6F88050>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}IDREFS', <zeep.xsd.types.builtins.IDREFS object at 0x0000026DC6F889D0>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}ENTITY', <zeep.xsd.types.builtins.Entity object at 0x0000026DC6F88350>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}ENTITIES', <zeep.xsd.types.builtins.Entities object at 0x0000026DC6F8A0D0>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}integer', <zeep.xsd.types.builtins.Integer object at 0x0000026DC6F89850>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}nonPositiveInteger', <zeep.xsd.types.builtins.NonPositiveInteger object at 0x0000026DC6EDD910>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}negativeInteger', <zeep.xsd.types.builtins.NegativeInteger object at 0x0000026DC6F88650>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}long', <zeep.xsd.types.builtins.Long object at 0x0000026DC6F8A190>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}int', <zeep.xsd.types.builtins.Int object at 0x0000026DC6F899D0>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}short', <zeep.xsd.types.builtins.Short object at 0x0000026DC6F89890>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}byte', <zeep.xsd.types.builtins.Byte object at 0x0000026DC6F8AD50>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}nonNegativeInteger', <zeep.xsd.types.builtins.NonNegativeInteger object at 0x0000026DC6F887D0>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}unsignedByte', <zeep.xsd.types.builtins.UnsignedByte object at 0x0000026DC6F8BA90>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}unsignedInt', <zeep.xsd.types.builtins.UnsignedInt object at 0x0000026DC6F88F50>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}unsignedLong', <zeep.xsd.types.builtins.UnsignedLong object at 0x0000026DC6F8A950>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}unsignedShort', <zeep.xsd.types.builtins.UnsignedShort object at 0x0000026DC6F8B650>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}positiveInteger', <zeep.xsd.types.builtins.PositiveInteger object at 0x0000026DC6F89690>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}anyType', <zeep.xsd.types.any.AnyType object at 0x0000026DC6F27810>)
+18:56:25 DEBUG register_type('{http://www.w3.org/2001/XMLSchema}anySimpleType', <zeep.xsd.types.simple.AnySimpleType object at 0x0000026DC6F2D410>)
+18:56:25 DEBUG register_element('{http://www.w3.org/2001/XMLSchema}schema', <zeep.xsd.elements.builtins.Schema object at 0x0000026DC6F2F150>)
+18:56:25 DEBUG Add document with tns http://www.w3.org/2001/XMLSchema to schema 2670512810960
+18:56:25 DEBUG Loading remote data from: https://speller.yandex.net/services/spellservice?WSDL
+18:56:25 DEBUG Starting new HTTPS connection (1): speller.yandex.net:443
+18:56:25 DEBUG https://speller.yandex.net:443 "GET /services/spellservice?WSDL HTTP/1.1" 200 None
+18:56:25 DEBUG Creating definition for https://speller.yandex.net/services/spellservice?WSDL
+18:56:25 DEBUG Init schema document for 'https://speller.yandex.net/services/spellservice?WSDL'
+18:56:25 DEBUG Add document with tns http://speller.yandex.net/services/spellservice to schema 2670512810960
+18:56:25 DEBUG register_element('{http://speller.yandex.net/services/spellservice}CheckTextRequest', <Element(name='CheckTextRequest', type=<zeep.xsd.dynamic_types.CheckTextRequest object at 0x0000026DC6FA6010>)>)
+18:56:25 DEBUG register_element('{http://speller.yandex.net/services/spellservice}CheckTextResponse', <Element(name='CheckTextResponse', type=<zeep.xsd.dynamic_types.CheckTextResponse object at 0x0000026DC6FA5750>)>)
+18:56:25 DEBUG register_type('{http://speller.yandex.net/services/spellservice}SpellResult', <zeep.xsd.dynamic_types.SpellResult object at 0x0000026DC6FA6710>)
+18:56:25 DEBUG register_type('{http://speller.yandex.net/services/spellservice}SpellError', <zeep.xsd.dynamic_types.SpellError object at 0x0000026DC6FA7ED0>)
+18:56:25 DEBUG register_element('{http://speller.yandex.net/services/spellservice}CheckTextsRequest', <Element(name='CheckTextsRequest', type=<zeep.xsd.dynamic_types.CheckTextsRequest object at 0x0000026DC6FA7D50>)>)
+18:56:25 DEBUG register_element('{http://speller.yandex.net/services/spellservice}CheckTextsResponse', <Element(name='CheckTextsResponse', type=<zeep.xsd.dynamic_types.CheckTextsResponse object at 0x0000026DC6FA6910>)>)
+18:56:25 DEBUG register_type('{http://speller.yandex.net/services/spellservice}ArrayOfSpellResult', <zeep.xsd.dynamic_types.ArrayOfSpellResult object at 0x0000026DC6FA6990>)
+18:56:25 DEBUG Resolving in schema <SchemaDocument(location='https://speller.yandex.net/services/spellservice?WSDL', tns='http://speller.yandex.net/services/spellservice', is_empty=False)>
+18:56:25 DEBUG Adding message: {http://speller.yandex.net/services/spellservice}checkTextSoapIn
+18:56:25 DEBUG Adding message: {http://speller.yandex.net/services/spellservice}checkTextSoapOut
+18:56:25 DEBUG Adding message: {http://speller.yandex.net/services/spellservice}checkTextsSoapIn
+18:56:25 DEBUG Adding message: {http://speller.yandex.net/services/spellservice}checkTextsSoapOut
+18:56:25 DEBUG Adding port: {http://speller.yandex.net/services/spellservice}SpellServiceSoap
+18:56:25 DEBUG Adding binding: {http://speller.yandex.net/services/spellservice}SpellServiceSoap
+18:56:25 DEBUG Adding binding: {http://speller.yandex.net/services/spellservice}SpellServiceSoap12
+18:56:25 DEBUG Adding service: SpellService
+18:56:25 WARNING Forcing soap:address location to HTTPS
+18:56:25 WARNING Forcing soap:address location to HTTPS
+18:56:25 DEBUG HTTP Post to https://speller.yandex.net/services/spellservice:
+<?xml version='1.0' encoding='utf-8'?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Body><ns0:CheckTextRequest xmlns:ns0="http://speller.yandex.net/services/spellservice" options="0" format=""><ns0:text>калбаса</ns0:text></ns0:CheckTextRequest></soap-env:Body></soap-env:Envelope>
+18:56:25 DEBUG https://speller.yandex.net:443 "POST /services/spellservice HTTP/1.1" 200 483
+18:56:25 DEBUG HTTP Response from https://speller.yandex.net/services/spellservice (status: 200):
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><CheckTextResponse xmlns="Speller service"><SpellResult><error code="1" pos="0" row="0" col="0" len="7"><word>калбаса</word><s>колбаса</s><s>колбасы</s><s>колбасу</s></error></SpellResult></CheckTextResponse></soap:Body></soap:Envelope>
+18:56:25 INFO Test5 starting
+18:56:25 DEBUG DELETE http://localhost:54699/session/707a71f9f026feaa9b574f6bc021e7e4 {}
+18:56:25 DEBUG http://localhost:54699 "DELETE /session/707a71f9f026feaa9b574f6bc021e7e4 HTTP/1.1" 200 0
+18:56:25 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+18:56:25 DEBUG Finished Request
